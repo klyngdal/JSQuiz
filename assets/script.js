@@ -4,48 +4,48 @@ let savedScores = [];
 // questions - multiple choice
 
 let questions = [{
-    question: "hello?",
+    question: "What does CSS stand for?",
         choices: [
-            "1. hi?",
-            "2. welcome?",
-            "3. goodbye?",
+            "1. Complete Saving Style",
+            "2. Cascading Style Sheets",
+            "3. Creative styleing sheet",
     ],  
-    answer: 0
+    answer: 2
 },
 
 {
-    question: "hello?",
+    question: "Why is the sky blue?",
         choices: [
-            "1. hi?",
-            "2. welcome?",
-            "3. goodbye?",
+            "1. Atomsphere dabris",
+            "2. All planets have blue skies",
+            "3. Reflects off the ocean",
     ],  
-    answer: 1
+    answer: 3
 },
 
-{   question: "hello?",
+{   question: "How many hearts does an Octopus have?",
         choices: [
-        "1. hi?",
-        "2. welcome?",
-        "3. goodbye?",
+        "1. 3",
+        "2. 6",
+        "3. 1",
 ],  
-    answer: 0
+    answer: 1
 },
-{   question: "hello?",
+{   question: "Where is Disneyworld Llcated?",
         choices: [
-            "1. hi?",
-            "2. welcome?",
-            "3. goodbye?",
+            "1. CA",
+            "2. TX",
+            "3. FL",
 ],  
-    answer: 0     
+    answer: 3     
 },
-{    question: "hello?",
+{    question: "What do you call a baby goat?",
         choices: [
-            "1. hi?",
-            "2. welcome?", 
-            "3. goodbye?",
+            "1. Fred",
+            "2. Kid", 
+            "3. Baby Goat",
 ],  
-    answer: 0
+    answer: 2
 },
 ];
 
@@ -180,7 +180,7 @@ function getNextQuestion() {
             //input initials and submit
          submitButton.addEventListener("click", getInitials);   
     }
-    // hold score date 
+    // hold score data 
     const scoreName = "endscore";
     let initialsEl = document.getElementById("initials");
 
@@ -234,9 +234,9 @@ function getNextQuestion() {
     }
 
     let startBtn = document.querySelector("#start-button");
-    let goBackBtn = document.querySelector("#go-back");
+    let tryAgainBtn = document.querySelector("#try-again");
     let clearResultBtn = document.querySelector("#clear-results");
     startBtn.addEventListener("click", countDown);
-    goBackBtn.addEventListener("click", startGameOver);
+    tryAgainBtn.addEventListener("click", startGameOver);
     clearResultBtn.addEventListener("click", clearLocalStorage);
 }
