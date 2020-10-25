@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\style.css"/>
+   
+  </head>
+  
+  <body>
+  <!--display high scores-->
+  <section class="scores timers">
+      <h1>View High score: <span id="view-high-score">0</span></h1>
+      <h1>Timer: <span id="timer">0</span></h1>
+  </section>
+   
+
+    <!--intro page & start button-->
+    <section class="start-page" id="start-page">
+        <div class="header">
+            <h2>Welcome to the Coding Quiz!</h2>
+        </div>
+
+        <div class= "container">
+            <button id="start-button" class="start-button">Start Quiz</button>
+        </div>
+        <div class="instuctions">
+            <div class="col-md-12">
+                <p>Lets test your knowledge! Try to answer as many answers best you can until the timer reaches 0. The incorrect answer costs you 10 secounds! Good luck!</p>
+                
+            </div>
+    </section>        
+    <!-- quis question container-->
+    <div id="quiz-content" class="quiz-content">
+        <h3 id="quiz-question" class="quiz-question"></h3>
+        <ul id="quiz-answer" class="quiz-answer"></ul>
+        <div id="question-results" class="results hidden"></div>
+    </div>
+   
+   
+    
+    <section id="quiz-end" class="quiz-end hidden">
+        <h3>End of Quiz!</h3>
+        <p>Final score is <span id="final-score"></span></p>
+        <div class="inital-input">
+            <label for="initials">Enter your initials: </label>
+            <input type="text" id="initials" name="initials">
+            <button type="submit" id="submit-button">Add to the leader board!</button>
+        </div>
+    </section>
+
+    <!-- need to display saved score, clear old, and restart game-->
+
+    <section id="show-results" class="high-results hidden">
+        <h3>Leader Board</h3>
+        <input type="text" id="show-high-results" name="show-high-results">
+        <button type="reset" id="try-again">Try again?</button>
+        <button type="reset" id="clear-results">Clear Leader Board</button>
+    </section>
+    <script src="assets\js\script.js"></script>
+   
+    
+  </body>
+</html>
